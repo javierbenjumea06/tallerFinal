@@ -20,11 +20,11 @@ let libros = [{
     "estado":"disponible",
 }]
 
-const libroParaPrestar = "Cien Años de Soledad"
+const libroAPedirPrestado = "Cien Años de Soledad"
 
-const prestarLibro = (libros, libroParaPrestar) =>
+const prestarLibro = (libros, libroAPedirPrestado) =>
 {
-const busqueda = libros.find(a => a.titulo.includes(libroParaPrestar))
+const busqueda = libros.find(JSONlibro => JSONlibro.titulo.includes(libroAPedirPrestado))
 if (!busqueda) {
     console.log("No se encontró el libro.")
 } else if (busqueda.estado != "disponible") {
@@ -35,11 +35,19 @@ if (!busqueda) {
 }
 }
 
-const libroParaDevolver = "Harry Potter"
+const libroADevolver = "Harry Potter"
 
-const devolverLibro = (libros, libroParaDevolver) =>
+const devolverLibro = (libros, libroADevolver) =>
 {
-
+const busqueda2 = libros.find(JSONlibro => JSONlibro.titulo.includes(libroADevolver))
+if (!busqueda2) {
+    console.log("No se encontró el libro.")
+} else if (busqueda2.estado != "prestado") {
+    console.log("Este libro no se ha prestado")
+} else {
+    console.log("Se ha devuelto el libro con exito")
+    busqueda2.estado = "disponible"
+}
 }
 
 
