@@ -1,4 +1,5 @@
-console.log("Hola mundo")
+import {usuarios, registrarUsuario} from "./usuarios.js"
+import { prestarLibro, devolverLibro } from "./prestamos.js"
 
 let libros = [{
     "titulo":"Cien Años de Soledad",
@@ -15,3 +16,16 @@ let libros = [{
     "autor":"Fahim Florez",
     "estado":"disponible",
 }]
+
+const nombre = "Ernesto Orozco"
+const email = "ernesto.orozco@gmail.com"
+
+registrarUsuario(nombre, email)
+console.log(usuarios)
+
+const libroAPedirPrestado = "Cien Años de Soledad"
+const libroADevolver = "Harry Potter"
+
+prestarLibro(libros, libroAPedirPrestado)
+devolverLibro(libros, libroADevolver)
+libros.forEach(libro => console.log(libro))
