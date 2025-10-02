@@ -13,14 +13,16 @@ if (menuF == 1) {
     3. Buscar productos por nombre o categoria.`)
 
     if (menu1 == 1){
-        Registrarusuarios(menu)
+        Registrarusuarios()
     } else if (menu1 == 2){
-        Registrarlibros(menu)
+        Registrarlibros()
     } else if (menu1 == 3){
-        Prestarunlibro(menu)
+        Prestarunlibro()
     } else if (menu1 == 4){
-        Devolverunlibro(menu)
-    } else if (menu1 == 4){
-                 Listar(menu)
+        Devolverunlibro()
+    } else if (menu1 ==  5){
+        Listar()
+    } else if (menu1 ==  6){
+        salir()
     } else {console.log("Escribiste algo invalido")}
 }
