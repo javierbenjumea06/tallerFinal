@@ -1,9 +1,3 @@
-/*Prestar un libro:
-Solo si está disponible.
-Cambiar el estado a prestado.
-Devolver un libro:
-Cambiar el estado a disponible.*/
-
 let libros = [{
     "titulo":"Cien Años de Soledad",
     "autor":"Tomas Vega",
@@ -22,7 +16,7 @@ let libros = [{
 
 const libroAPedirPrestado = "Cien Años de Soledad"
 
-const prestarLibro = (libros, libroAPedirPrestado) =>
+export const prestarLibro = (libros, libroAPedirPrestado) =>
 {
 const busqueda = libros.find(JSONlibro => JSONlibro.titulo.includes(libroAPedirPrestado))
 if (!busqueda) {
@@ -37,7 +31,7 @@ if (!busqueda) {
 
 const libroADevolver = "Harry Potter"
 
-const devolverLibro = (libros, libroADevolver) =>
+export const devolverLibro = (libros, libroADevolver) =>
 {
 const busqueda2 = libros.find(JSONlibro => JSONlibro.titulo.includes(libroADevolver))
 if (!busqueda2) {
