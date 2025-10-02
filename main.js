@@ -1,4 +1,13 @@
-console.log("Hola mundo")
+console.log(`
+    
+    
+    
+✦━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━✦
+║      📖  Todos los libros de la biblioteca  📖   ║
+✦━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━✦
+    
+    
+    `)
 
 let libros = [{
     "titulo":"Cien Años de Soledad",
@@ -24,4 +33,13 @@ let libros = [{
     "titulo":"El principito",
     "autor":"Antoine de Saint-Exupéry",
     "estado":"prestado",
-}]
+
+}
+];
+
+libros.forEach(libro => {
+  console.log(`
+📚 ${libro.titulo}
+   ✍️  Autor: ${libro.autor}
+   📌 Estado: ${libro.estado}
+-----------------------------`)})
