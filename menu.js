@@ -1,6 +1,5 @@
-
 export function menu () {
-    const menuF = prompt(`ACCEDE A UNO DE LOS MENUS: 
+    const menuF = (`ACCEDE A UNO DE LOS MENUS: 
         1. Registrar usuarios. 
         2. Registrar libros. 
         3. Prestar un libro.
@@ -8,17 +7,19 @@ export function menu () {
         5. Listar:
         6. Salir.`)
 
-    if (menu1 == 1){
+    if (menuF == 1){
         Registrarusuarios()
-    } else if (menu1 == 2){
+    } else if (menuF == 2){
         Registrarlibros()
-    } else if (menu1 == 3){
+    } else if (menuF == 3){
         prestarunlibro()       
-    } else if (menu1 == 4){
+    } else if (menuF == 4){
         Devolverunlibro()
-    } else if (menu1 ==  5){
+    } else if (menuF ==  5){
         Listar()
-    } else if (menu1 ==  6){
-        salir()
-    } else {console.log("Escribiste algo invalido")}
+    } else if (menuF ==  6){
+        console.log("Has decidido salir.")
+    } else {
+        console.log("Escribiste algo invalido")
+    }
 }
