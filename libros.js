@@ -13,3 +13,7 @@ Libros por un autor (usando .filter).
 */
 
 //findINDEX
+export function agregarlibro(libros, libronuevo) {
+  libros.push(libronuevo);
+}
+

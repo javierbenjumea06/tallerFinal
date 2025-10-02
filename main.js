@@ -43,3 +43,8 @@ libros.forEach(libro => {
    ✍️  Autor: ${libro.autor}
    📌 Estado: ${libro.estado}
 -----------------------------`)})
+
+//2.Registrar libros con: Título, Autor, Estado (disponible o prestado)
+import { agregarlibro } from "./libros.js";
+agregarlibro(libros, { titulo: "No tengo boca y debo gritar", autor: "Harlan Ellison", estado: "disponible" });
+console.log(libros)
