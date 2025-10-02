@@ -7,7 +7,8 @@ const usuarios = [
 
 const nombre = "Ernesto Orozco"
 const email = "ernesto.orozco@gmail.com"
-function registrarUsuario(nombre, email) {
+ 
+export function registrarUsuario(nombre, email) {
     if (!nombre || !email) {
     console.log('Error: Debes proporcionar nombre y correo electrónico.');
   }
