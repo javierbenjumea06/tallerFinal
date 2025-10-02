@@ -24,7 +24,6 @@ const libroParaPrestar = "Cien Años de Soledad"
 
 const prestarLibro = (libros, libroParaPrestar) =>
 {
-console.log("Por favor introduce el titulo del libro que quieres pedir prestado.")
 const busqueda = libros.find(a => a.titulo.includes(libroParaPrestar))
 if (!busqueda) {
     console.log("No se encontró el libro.")
@@ -36,6 +35,12 @@ if (!busqueda) {
 }
 }
 
+const libroParaDevolver = "Harry Potter"
+
+const devolverLibro = (libros, libroParaDevolver) =>
+{
+
+}
 
 
 
