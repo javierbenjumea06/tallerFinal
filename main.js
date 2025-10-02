@@ -14,4 +14,14 @@ let libros = [{
     "titulo":"Battle Royale",
     "autor":"Fahim Florez",
     "estado":"disponible",
+},
+{
+    "titulo":"Bullet Train",
+    "autor":"Kōtarō Isaka",
+    "estado":"prestado",
+},
+{
+    "titulo":"El principito",
+    "autor":"Antoine de Saint-Exupéry",
+    "estado":"prestado",
 }]
