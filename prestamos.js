@@ -1,4 +1,4 @@
-let libros = [{
+/*let libros = [{
     "titulo":"Cien Años de Soledad",
     "autor":"Tomas Vega",
     "estado":"disponible",
@@ -12,7 +12,7 @@ let libros = [{
     "titulo":"Battle Royale",
     "autor":"Fahim Florez",
     "estado":"disponible",
-}]
+}]*/
 
 const libroAPedirPrestado = "Cien Años de Soledad"
 
@@ -44,5 +44,7 @@ if (!busqueda2) {
 }
 }
 
-
+/*prestarLibro(libros, libroAPedirPrestado)
+devolverLibro(libros, libroADevolver)
+libros.forEach(libro => console.log(libro))*/
 
