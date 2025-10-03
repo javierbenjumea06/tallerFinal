@@ -1,3 +1,4 @@
+import { agregarlibro, listarTodos } from "./libros"
 import { devolverLibro, prestarLibro } from "./prestamos"
 
 export function menu () {
@@ -12,13 +13,13 @@ export function menu () {
     if (menuF == 1){
         registrarUsuario()
     } else if (menuF == 2){
-        Registrarlibros()
+        agregarlibro()
     } else if (menuF == 3){
         prestarLibro()       
     } else if (menuF == 4){
         devolverLibro()
     } else if (menuF ==  5){
-        Listar()
+        listarTodos()
     } else if (menuF ==  6){
         console.log("Has decidido salir.")
     } else {
