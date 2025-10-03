@@ -1,3 +1,5 @@
+import { devolverLibro, prestarLibro } from "./prestamos"
+
 export function menu () {
     const menuF = (`ACCEDE A UNO DE LOS MENUS: 
         1. Registrar usuarios. 
@@ -8,13 +10,13 @@ export function menu () {
         6. Salir.`)
 
     if (menuF == 1){
-        Registrarusuarios()
+        registrarUsuario()
     } else if (menuF == 2){
         Registrarlibros()
     } else if (menuF == 3){
-        prestarunlibro()       
+        prestarLibro()       
     } else if (menuF == 4){
-        Devolverunlibro()
+        devolverLibro()
     } else if (menuF ==  5){
         Listar()
     } else if (menuF ==  6){
