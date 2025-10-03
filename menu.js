@@ -1,6 +1,3 @@
-import { agregarlibro, listarTodos } from "./libros"
-import { devolverLibro, prestarLibro } from "./prestamos"
-
 export function menu () {
     const menuF = (`ACCEDE A UNO DE LOS MENUS: 
         1. Registrar usuarios. 
@@ -26,3 +23,4 @@ export function menu () {
         console.log("Escribiste algo invalido")
     }
 }
+

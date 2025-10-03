@@ -48,3 +48,5 @@ agregarlibro(libros, libroNuevo)
 console.log("✅ Disponibles:", listarDisponibles(libros));
 console.log(`✍️ Libros de ${autor}:`, listarPorAutor(libros, autor));
 listarTodos(libros)
+
+
